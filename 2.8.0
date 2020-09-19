@@ -1,0 +1,15 @@
++ sweetalert@2.1.2
++ sweetalert@2.1.2
++ -@0.0.1
++ jquery@1.9.1
++ 3@2.1.0
++ axios@0.15.0
++ popper.js@1.16.0
++ typescript@3.9.7
+added 12 packages from 10 contributors, updated 3 packages and audited 1665 packages in 181.613s
+
+66 packages are looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details

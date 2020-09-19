@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom';
 
-class LeftPanel extends Component {
+class SupplierPanel extends Component {
     render() {
         return (
             <aside id="left-panel" class="left-panel">
@@ -13,18 +13,15 @@ class LeftPanel extends Component {
                             {localStorage.getItem("ownerName")}  <hr/>  
                         </li>
                         <li class="active">
-                            <Link active to="/home"><i class="menu-icon fa fa-laptop"></i>Add Vendor </Link>    
+                            <Link active to="/addConsignment"><i class="menu-icon fa fa-laptop"></i>Add Consignment</Link>    
                         </li>
                         <li>
-                        <Link to="/product"><i class="menu-icon fa fa-laptop"></i>Add Consignment </Link>
+                        <Link to="/consigments"><i class="menu-icon fa fa-laptop"></i>Consignments </Link>
                         </li>
                         <li>
-                            <a href="widgets.html"> <i class="menu-icon ti-email"></i>Consignments</a>
+                        <Link to="/tracking"><i class="menu-icon fa fa-laptop"></i>Tracking </Link>
                         </li>
-                        <li>
-                            <a href="widgets.html"> <i class="menu-icon ti-email"></i>Tracking</a>
-                        </li>
-                        
+                       
                     </ul>
               </div>
             </nav>
@@ -33,4 +30,4 @@ class LeftPanel extends Component {
         )
     }
 }
-export default LeftPanel
+export default SupplierPanel

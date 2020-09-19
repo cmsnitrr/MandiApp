@@ -11,6 +11,9 @@ import Myform from './../Product/Myform';
 import MyComponentHook from './../User/MyComponentHook';
 import UserList from './../User/UserList';
 import AddUser from './../User/AddUser';
+import SupplierPanel from './SupplierPanel';
+import AddConsignment from './../Consignment/AddConsignment';
+import Consignments from './../Consignment/Consignments';
 class Supplier extends Component {
     constructor(props){
         super(props)
@@ -37,19 +40,16 @@ class Supplier extends Component {
         }
         return (
             <Router>
-               <LeftPanel/>
+               <SupplierPanel/>
                 <div id="right-panel" class="right-panel">    
                 <h1>Supplier Panel</h1>
-                <Header logout={this.logout} name="Keshav Naharwar"/>
+                <Header logout={this.logout}/>
                     <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/home" component={Home}/>
-                        <Route exact path="/product" component={Product} />
-                        <Route exact path="/addproduct" component={AddProduct} />
-                        <Route exact path="/addcategory" component={AddCategory} />
-                        <Route exact path="/MyComponentHook" component={MyComponentHook} />
-                        <Route exact path="/UserList" component={UserList} />
-                        <Route exact path="/createUser" component={AddUser}/>
+                        <Route exact path="/" component={Supplier} />
+                        <Route exact path="/addConsignment" component={AddConsignment}/>
+                        <Route exact path="/consigments" component={Consignments}/>
+
+                        
                     </Switch>
                     <Footer/>
                 </div>

@@ -11,6 +11,7 @@ import Myform from './../Product/Myform';
 import MyComponentHook from './../User/MyComponentHook';
 import UserList from './../User/UserList';
 import AddUser from './../User/AddUser';
+import BuyerPanel from './BuyerPanel';
 class Buyer extends Component {
     constructor(props){
         super(props)
@@ -37,7 +38,7 @@ class Buyer extends Component {
         }
         return (
             <Router>
-               <LeftPanel/>
+               <BuyerPanel/>
                 <div id="right-panel" class="right-panel"> 
                 <h1>Buyer Panel</h1>   
                 <Header logout={this.logout} name="Keshav Naharwar"/>

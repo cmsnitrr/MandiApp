@@ -23,6 +23,7 @@ function App() {
    <Route exact path="/" component={Dashboard} />
    <Route exact path="/buyer" component={Buyer}/>
    <Route exact path="/supplier" component={Supplier} />
+   <Route exact path="/addConsignment" component={Supplier} />
    <Route exact path="/home" component={Dashboard} />
    <Route exact path="/product" component={Dashboard} />
    <Route exact path="/addproduct" component={Dashboard} />

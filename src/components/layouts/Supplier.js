@@ -45,7 +45,7 @@ class Supplier extends Component {
                 <h1>Supplier Panel</h1>
                 <Header logout={this.logout}/>
                     <Switch>
-                        <Route exact path="/" component={Supplier} />
+                        <Route exact path="/supplier" component={Supplier} />
                         <Route exact path="/addConsignment" component={AddConsignment}/>
                         <Route exact path="/consigments" component={Consignments}/>
 

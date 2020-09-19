@@ -1,4 +1,5 @@
-import axios from "axios"
+import axios from "axios";
+import { successAlert } from './../components/layouts/SweetAlert';
 export const createConsignment = (consignment, history) => async dispatch => {
     console.log(consignment.token)
     try {
@@ -6,8 +7,8 @@ export const createConsignment = (consignment, history) => async dispatch => {
         //conditional rendering here on the basis of response code
         console.log(`inside success ${res.data.message}`);
         console.log(res.data)
-        //successAlert("Success",res)
-      // history.push("/product");
+        successAlert("Success","Consignmnet Added Successfully")
+      history.push("/supplier");
     } catch (error) {
         console.log(`inside failuer ${error}`)
       
